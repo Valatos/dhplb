@@ -3,6 +3,8 @@ const client = new BotClient(process.env.TOKEN);
 
 client.start();
 
+// Now ping the bot every so often to make sure it does not go offline.
+
 const http = require('http');
 const express = require('express');
 const app = express();
